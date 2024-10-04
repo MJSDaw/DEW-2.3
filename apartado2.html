@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenido"></div>
+    <script>
+        let resultado = '';
+        resultado += '<p>125 / 8 = ' + (125 >> 3) + '</p><br>';
+        resultado += '<p>40 x 4 = ' + (40 << 2) + '</p><br>';
+        resultado += '<p>25 / 2 = ' + (25 >> 1) + '</p><br>';
+        resultado += '<p>10 x 16 = ' + (10 << 4) + '</p><br>';
+        document.getElementById('contenido').innerHTML = resultado;
+    </script>
+</body>
+</html>

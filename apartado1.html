@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas de multiplicar</title>
+</head>
+<body>
+    <div id="contenido"></div>
+    <script>
+        let resultado = '';
+
+        // tabla de multiplicar del 7 con while
+
+        resultado += '<h1>Tabla multiplicación del 7 while</h1>'
+        let iterador1 = 0;
+        while(iterador1 <= 10){
+            resultado += '7 x ' + iterador1 + ' = ' + (7 * iterador1) + '. <br>';
+            iterador1 ++;
+        }
+
+        // tabla de sumas del 8 con for
+
+        resultado += '<h1>Tabla suma del 8 for</h1>'
+        for(let iterador2 = 0; iterador2 <= 10; iterador2 ++){
+            resultado += '8 + ' + iterador2 + ' = ' + (8 + iterador2) + '. <br>';
+        }
+
+        // tabla de restas del 9 con do-while
+
+        resultado += '<h1>Tabla resta del 9 do-while</h1>'
+        let iterador3 = 0;
+        do{
+            resultado += '9 - ' + iterador3 + ' = ' + (9 - iterador3) + '. <br>';
+            iterador3 ++;
+        } while(iterador3 <= 10)
+
+        document.getElementById('contenido').innerHTML = resultado;
+
+    </script>
+</body>
+</html>
